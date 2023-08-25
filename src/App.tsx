@@ -3,7 +3,6 @@ import './App.css'
 import Navbar from './components/Navbar/Navbar';
 import Footer from './components/Footer/Footer';
 import Main from './components/Main/Main';
-import Skill from './components/Skill/Skill';
 
 function App() {
 
@@ -12,7 +11,6 @@ function App() {
     <>
       <Navbar/>
       <Main/>
-      <Skill/>
       <Footer/>
     </>
   )

@@ -1,17 +1,21 @@
-type Props = {}
+type Props = {
+  name : string,
+  src : string,
+  alt: string
+}
 
-const Skill = (props: Props) => {
+const Skill = ({name, src, alt}: Props) => {
   return (
     <section>
       <div className="box-content h-32 w-32 border-double border-4">
         <div>
           <div className="mb-1">
             <h4 className="">
-              Material
+              {name}
             </h4>
           </div>
           <div>
-            url
+            <img src={src} alt={alt} />
           </div>
         </div>
       </div>
