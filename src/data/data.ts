@@ -2,9 +2,17 @@ export type skill = {
   name : string,
   src : string,
   alt : string
+};
+
+export type project = {
+  title : string,
+  urlRepository : string,
+  urlProduction? : string,
+  src : string,
+  alt : string
 }
 
-const skills : skill[] = [
+const skillsData : skill[] = [
   {
     name: "React JS",
     src: "url",
@@ -39,7 +47,52 @@ const skills : skill[] = [
     name: "React JS",
     src: "url",
     alt: "React JS's logo"
+  },
+];
+
+const projectsData : project[] = [
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
+    alt: "altText"
+  },
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
+    alt: "altText"
+  },
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
+    alt: "altText"
+  },
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
+    alt: "altText"
+  },
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
+    alt: "altText"
+  },
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
+    alt: "altText"
   },
 ]
 
-export default skills;
+export {skillsData, projectsData};

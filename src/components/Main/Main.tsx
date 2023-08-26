@@ -1,10 +1,11 @@
 import Skill from "../Skill/Skill"
-import data, { skill } from "../../data/data"
+import { skillsData, projectsData, skill, project } from "../../data/data";
 import { useState } from "react"
 import Project from "../Project/Project";
 
 const Main = () => {
-  const [skills] = useState<skill[]>(data);
+  const [skills] = useState<skill[]>(skillsData);
+  const [projects] = useState<project[]>(projectsData);
 
 
   return (
@@ -34,7 +35,7 @@ const Main = () => {
               <h2>My skills</h2>
             </header>
             <div className="flex flex-row items-center justify-center">
-              {skills.map((skill) => (
+              {skills && skills.map((skill) => (
                 <div>
                   <Skill name={skill.name} src={skill.src} alt={skill.alt}/>
                 </div>
@@ -48,12 +49,9 @@ const Main = () => {
               <h2>Projects</h2>
             </header>
             <div>
-              <div>
-                TEST ipsum dolor sit, amet consectetur adipisicing elit. Laudantium ipsam quibusdam nam qui, fugiat error eaque placeat facere temporibus reiciendis accusamus nobis, tempora repellendus ab, labore itaque recusandae doloremque. Corporis.
-              </div>
-              <div>
-                <Project/>
-              </div>
+              {projects && projects.map((project) => (
+                <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
+              ))}
             </div>
           </div>
         </article>
