@@ -10,8 +10,9 @@ type Props = {
 const Project = ({title, urlRepository, urlProduction, src, alt}: Props) => {
   return (
     <div>
-      <div className='rounded h-52 overflow-auto aspect-video'>
+      <div className={'border-4 h-52 overflow-auto aspect-video ' + `bg-[url(../../../public/vite.svg)]`}>
         <img src={src} alt={alt} />
+        <span>{src}</span>
         <div>
           {title}
         </div>

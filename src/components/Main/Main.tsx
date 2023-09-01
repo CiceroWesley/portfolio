@@ -11,7 +11,7 @@ const Main = () => {
   return (
     <main>
       <div className="min-h-screen">
-        <article>
+        <article id="about">
           <div className="flex flex-row items-center justify-between">
             <div>
               <div>
@@ -25,13 +25,13 @@ const Main = () => {
               </div>
             </div>
             <div>
-              Foto minha
+              My photo
             </div>
           </div>
         </article>
         <article>
           <div className="border-t-4">
-            <header>
+            <header id="skills">
               <h2>My skills</h2>
             </header>
             <div className="flex flex-row items-center justify-center">
@@ -45,7 +45,7 @@ const Main = () => {
         </article>
         <article>
           <div className="border-t-4">
-            <header>
+            <header id="projects">
               <h2>Projects</h2>
             </header>
             <div>
@@ -56,9 +56,24 @@ const Main = () => {
           </div>
         </article>
         <article>
-          <div className="border-t-4">
-            <header>Contact-me</header>
+          <div className="flex flex-col items-center border-t-4">
+            <header id="contactme">Contact-me</header>
             <div>
+              <div>
+                <a href="mailto: wesleycariutaba@gmail.com">
+                  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail badge"/>
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/CiceroWesley/">
+                  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin badge"/>
+                </a>
+              </div>
+              <div>
+                <a href="https://github.com/CiceroWesley/">
+                  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github badge"/>
+                </a>
+              </div>
             </div>
           </div>
         </article>

@@ -15,7 +15,7 @@ export type project = {
 const skillsData : skill[] = [
   {
     name: "React JS",
-    src: "url",
+    src: "../../../public/vite.svg",
     alt: "React JS's logo"
   },
   {
@@ -55,7 +55,7 @@ const projectsData : project[] = [
     title: "SGRU",
     urlRepository: "link",
     urlProduction: "link",
-    src: "path",
+    src: "../../../public/vite.svg",
     alt: "altText"
   },
   {
