@@ -48,6 +48,36 @@ const skillsData : skill[] = [
     src: "url",
     alt: "React JS's logo"
   },
+  {
+    name: "React JS",
+    src: "url",
+    alt: "React JS's logo"
+  },
+  {
+    name: "React JS",
+    src: "url",
+    alt: "React JS's logo"
+  },
+  {
+    name: "React JS",
+    src: "url",
+    alt: "React JS's logo"
+  },
+  {
+    name: "React JS",
+    src: "url",
+    alt: "React JS's logo"
+  },
+  {
+    name: "React JS",
+    src: "url",
+    alt: "React JS's logo"
+  },
+  {
+    name: "React JS",
+    src: "url",
+    alt: "React JS's logo"
+  },
 ];
 
 const projectsData : project[] = [
@@ -56,6 +86,20 @@ const projectsData : project[] = [
     urlRepository: "link",
     urlProduction: "link",
     src: "../../../public/vite.svg",
+    alt: "altText"
+  },
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
+    alt: "altText"
+  },
+  {
+    title: "SGRU",
+    urlRepository: "link",
+    urlProduction: "link",
+    src: "path",
     alt: "altText"
   },
   {

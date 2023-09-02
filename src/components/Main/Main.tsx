@@ -34,9 +34,9 @@ const Main = () => {
             <header id="skills">
               <h2>My skills</h2>
             </header>
-            <div className="flex flex-row items-center justify-center">
+            <div className="flex flex-row items-center justify-center flex-wrap mx-16">
               {skills && skills.map((skill) => (
-                <div>
+                <div className="m-1">
                   <Skill name={skill.name} src={skill.src} alt={skill.alt}/>
                 </div>
               ))}
@@ -48,9 +48,11 @@ const Main = () => {
             <header id="projects">
               <h2>Projects</h2>
             </header>
-            <div>
+            <div className="flex flex-row items-center justify-center flex-wrap">
               {projects && projects.map((project) => (
-                <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
+                <div className="m-4">
+                  <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
+                </div>
               ))}
             </div>
           </div>
