@@ -10,22 +10,22 @@ const Main = () => {
 
   return (
     <main>
-      <div className="min-h-screen">
+      <div className="min-h-screen text-white mt-10">
         <article id="about">
-          <div className="flex flex-row items-center justify-between">
-            <div>
-              <div>
+          <div className="flex mb-10">
+            <div className="w-1/2">
+              <div className="flex flex-col font-medium text-2xl">
                 <span>Hello, my name is</span>
-                <span>Cicero Wesley</span>
+                <span className="text-5xl text-sky-300 font-semibold">Cicero Wesley</span>
               </div>
               <div>
-                <span>
+                <span className="text-xl">
                   Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quos quasi magni illo quaerat, quas in cumque doloribus velit enim, numquam reiciendis ullam facere laborum alias perferendis! Provident, magnam quisquam!
                 </span>
               </div>
             </div>
-            <div>
-              My photo
+            <div className="rounded-full w-1/2">
+              <img className="rounded-full h-96 mx-auto" src="../../../public/photo.jpg" alt="" />
             </div>
           </div>
         </article>
@@ -60,7 +60,7 @@ const Main = () => {
         <article>
           <div className="flex flex-col items-center border-t-4">
             <header id="contactme">Contact-me</header>
-            <div>
+            <div className="flex flex-row items-center space-x-2">
               <div>
                 <a href="mailto: wesleycariutaba@gmail.com">
                   <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail badge"/>

@@ -2,7 +2,7 @@
 const Navbar = () => {
   return (
     <nav>
-      <div className='flex flex-row items-center justify-between'>
+      <div className='flex flex-row items-center justify-between mb-2 text-white'>
         <div>
           <span>Cicero Wesley</span>
         </div>

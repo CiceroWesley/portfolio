@@ -8,11 +8,11 @@ function App() {
 
 
   return (
-    <>
+    <div className='bg-slate-800'>
       <Navbar/>
       <Main/>
       <Footer/>
-    </>
+    </div>
   )
 }
 
