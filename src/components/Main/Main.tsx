@@ -12,7 +12,7 @@ const Main = () => {
     <main>
       <div className="min-h-screen text-white mt-10">
         <article id="about">
-          <div className="flex mb-10">
+          <div className="flex mx-3 mb-10">
             <div className="w-1/2">
               <div className="flex flex-col font-medium text-2xl">
                 <span>Hello, my name is</span>
@@ -30,11 +30,11 @@ const Main = () => {
           </div>
         </article>
         <article>
-          <div className="border-t-4">
-            <header id="skills">
-              <h2>My skills</h2>
+          <div className="">
+            <header id="skills" className="flex flex-row justify-center font-medium text-2xl my-3">
+              <h2>MY SKILLS</h2>
             </header>
-            <div className="flex flex-row items-center justify-center flex-wrap mx-16">
+            <div className="flex flex-row items-center justify-center flex-wrap mx-16 my-4">
               {skills && skills.map((skill) => (
                 <div className="m-1">
                   <Skill name={skill.name} src={skill.src} alt={skill.alt}/>
@@ -44,9 +44,9 @@ const Main = () => {
           </div>
         </article>
         <article>
-          <div className="border-t-4">
-            <header id="projects">
-              <h2>Projects</h2>
+          <div className="">
+            <header id="projects" className="flex flex-row justify-center font-medium text-2xl">
+              <h2>PROJECTS</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
               {projects && projects.map((project) => (
@@ -58,8 +58,8 @@ const Main = () => {
           </div>
         </article>
         <article>
-          <div className="flex flex-col items-center border-t-4">
-            <header id="contactme">Contact-me</header>
+          <div className="flex flex-col items-center my-10">
+            <header id="contactme" className="font-medium text-2xl mb-4">CONTACT-ME</header>
             <div className="flex flex-row items-center space-x-2">
               <div>
                 <a href="mailto: wesleycariutaba@gmail.com">

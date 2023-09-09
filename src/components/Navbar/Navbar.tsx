@@ -2,8 +2,8 @@
 const Navbar = () => {
   return (
     <nav>
-      <div className='flex flex-row items-center justify-between mb-2 text-white'>
-        <div>
+      <div className='flex flex-row items-center justify-between mb-2 mx-3 text-white font-medium'>
+        <div className="text-sky-300">
           <span>Cicero Wesley</span>
         </div>
         <div className='flex flex-row items-center space-x-5'>

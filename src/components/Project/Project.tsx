@@ -14,14 +14,14 @@ const Project = ({title, urlRepository, urlProduction, src, alt}: Props) => {
         <div className="mx-auto">
           {title}
         </div>
-        <img src={src} alt={alt} />
-        <div className="flex flex-row items-center justify-around">
+        <img className="h-36" src={src} alt={alt} />
+        <div className="flex flex-row items-center justify-around my-1">
           <a href={urlRepository}>
-            <button className='rounded-full'>Repository</button>
+            <button className='bg-cyan-400 rounded-full px-2'>Repository</button>
           </a>
           {urlProduction && 
           <a href={urlProduction}>
-            <button className='rounded-full'>Production</button>
+            <button className='bg-cyan-400 rounded-full px-2'>Production</button>
           </a>}
         </div>
       </div>

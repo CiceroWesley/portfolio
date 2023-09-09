@@ -20,7 +20,7 @@ const skillsData : skill[] = [
   },
   {
     name: "React JS",
-    src: "url",
+    src: "../../../public/React-icon.png",
     alt: "React JS's logo"
   },
   {
@@ -92,7 +92,7 @@ const projectsData : project[] = [
     title: "SGRU",
     urlRepository: "link",
     urlProduction: "link",
-    src: "path",
+    src: "../../../public/lostAndFound.png",
     alt: "altText"
   },
   {
