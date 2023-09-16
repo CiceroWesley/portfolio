@@ -14,25 +14,25 @@ const Main = () => {
         <article id="about">
           <div className="flex mx-3 mb-10">
             <div className="w-1/2">
-              <div className="flex flex-col font-medium text-2xl">
+              <div className="flex flex-col font-semibold text-2xl">
                 <span>Hello, my name is</span>
                 <span className="text-5xl text-sky-300 font-semibold">Cicero Wesley</span>
               </div>
               <div>
-                <span className="text-xl">
-                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facilis quos quasi magni illo quaerat, quas in cumque doloribus velit enim, numquam reiciendis ullam facere laborum alias perferendis! Provident, magnam quisquam!
+                <span className="text-xl font-medium">
+                  I am a Computer Science &#127891; and a Full Stack Developer. I love making solutions and I am always searching to learn new technologies and improve on my skills &#9889;.
                 </span>
               </div>
             </div>
             <div className="rounded-full w-1/2">
-              <img className="rounded-full h-96 mx-auto" src="../../../public/photo.jpg" alt="" />
+              <img className="rounded-full h-96 mx-auto hover:shadow-2xl  hover:shadow-yellow-300/50" src="../../../public/photo.jpg" alt="" />
             </div>
           </div>
         </article>
         <article>
           <div className="">
-            <header id="skills" className="flex flex-row justify-center font-medium text-2xl my-3">
-              <h2>MY SKILLS</h2>
+            <header id="skills" className="flex flex-row justify-center font-semibold text-3xl my-3 bg-clip-text text-transparent bg-gradient-to-b from-yellow-300 to-amber-600">
+              <h2 className="">MY SKILLS</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap mx-16 my-4">
               {skills && skills.map((skill) => (
@@ -45,7 +45,7 @@ const Main = () => {
         </article>
         <article>
           <div className="">
-            <header id="projects" className="flex flex-row justify-center font-medium text-2xl">
+            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-300 to-amber-600">
               <h2>PROJECTS</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
@@ -59,7 +59,7 @@ const Main = () => {
         </article>
         <article>
           <div className="flex flex-col items-center my-10">
-            <header id="contactme" className="font-medium text-2xl mb-4">CONTACT-ME</header>
+            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-b from-yellow-300 to-amber-600">CONTACT-ME</header>
             <div className="flex flex-row items-center space-x-2">
               <div>
                 <a href="mailto: wesleycariutaba@gmail.com">

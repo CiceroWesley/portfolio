@@ -1,3 +1,5 @@
+
+
 type Props = {
   name : string,
   src : string,
@@ -5,19 +7,12 @@ type Props = {
 }
 
 const Skill = ({name, src, alt}: Props) => {
+  // const [opacity, setOpacity] = useState<umber>(1.0)
+
   return (
     <section>
-      <div className="box-content h-32 w-32 border-solid border-4 overflow-clip">
-        <div className="flex flex-col items-center">
-          <div className="mb-1">
-            <h4>
-              {name}
-            </h4>
-          </div>
-          <div className="">
-            <img className="h-20" src={src} alt={alt} />
-          </div>
-        </div>
+      <div className="flex flex-col items-center justify-center box-content h-32 w-32 overflow-clip bg-slate-900 rounded-lg">
+        <img className="h-20" src={src} alt={alt} title={name} />
       </div>
     </section>
   )
