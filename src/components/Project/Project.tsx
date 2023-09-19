@@ -16,11 +16,11 @@ const Project = ({title, urlRepository, urlProduction, src, alt}: Props) => {
         </div>
         <img className="h-36" src={src} alt={alt} />
         <div className="flex flex-row items-center justify-around my-1">
-          <a href={urlRepository}>
+          <a href={urlRepository} target="_blank">
             <button className='bg-lime-600 rounded-full px-2'>Repository</button>
           </a>
           {urlProduction && 
-          <a href={urlProduction}>
+          <a href={urlProduction} target="_blank">
             <button className='bg-lime-600 rounded-full px-2'>Production</button>
           </a>}
         </div>
