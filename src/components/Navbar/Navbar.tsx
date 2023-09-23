@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="text-sky-300">
           <span>Cicero Wesley</span>
         </div>
-        <div className='flex flex-row items-center space-x-5'>
+        <div className='hidden sm:flex sm:flex-row sm:items-center sm:space-x-5'>
           <a href="#about">
             <div>About</div>
           </a>

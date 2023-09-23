@@ -12,8 +12,8 @@ const Main = () => {
     <main>
       <div className="min-h-screen text-white mt-10">
         <article id="about">
-          <div className="flex mx-3 mb-10">
-            <div className="w-1/2">
+          <div className="sm:flex mx-3 mb-10">
+            <div className="sm:w-1/2">
               <div className="flex flex-col font-semibold text-2xl">
                 <span>Hello, my name is</span>
                 <span className="text-5xl text-sky-300 font-semibold">Cicero Wesley</span>
@@ -24,8 +24,8 @@ const Main = () => {
                 </span>
               </div>
             </div>
-            <div className="rounded-full w-1/2">
-              <img className="rounded-full h-96 mx-auto hover:shadow-2xl  hover:shadow-yellow-300/50" src="../../../public/photo.jpg" alt="" />
+            <div className="my-8 sm:rounded-full sm:w-1/2">
+              <img className="rounded-full h-80 sm:h-96 mx-auto hover:shadow-2xl  hover:shadow-yellow-300/50" src="../../../public/photo.jpg" alt="" />
             </div>
           </div>
         </article>

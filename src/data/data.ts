@@ -20,7 +20,7 @@ const skillsData : skill[] = [
   },
   {
     name: "React Native",
-    src: "../../../public/react.svg",
+    src: "../../../public/reactnative.svg",
     alt: "React Native's logo"
   },
   {
@@ -121,7 +121,7 @@ const projectsData : project[] = [
     title: "SGRU",
     urlRepository: "https://github.com/CiceroWesley/SGRU",
     urlProduction: "#",
-    src: "../../../public/vite.svg",
+    src: "../../../public/sgru.png",
     alt: "SGRU meeting page"
   },
   {
@@ -142,7 +142,7 @@ const projectsData : project[] = [
     title: "Pronele",
     urlRepository: "https://github.com/FelipeFelipeRenan/prontuario-medico",
     urlProduction: "#",
-    src: "../../../public/pronele.jpeg",
+    src: "../../../public/pronele.png",
     alt: "Initial screen of Pronele"
   },
   {
