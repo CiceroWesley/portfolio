@@ -28,11 +28,11 @@ const skillsData : skill[] = [
     src: "../../../public/materialui.svg",
     alt: "Material UI's logo"
   },
-  {
-    name: "TailwindCSS",
-    src: "../../../public/tailwindcss.svg",
-    alt: "TailwindCSS's logo"
-  },
+  // {
+  //   name: "TailwindCSS",
+  //   src: "../../../public/tailwindcss.svg",
+  //   alt: "TailwindCSS's logo"
+  // },
   {
     name: "Node JS",
     src: "../../../public/nodejs.svg",

@@ -10,7 +10,7 @@ type Props = {
 const Project = ({title, urlRepository, urlProduction, src, alt}: Props) => {
   return (
     <div>
-      <div className={'flex flex-col justify-between border-2 h-52 overflow-auto aspect-video'}>
+      <div className={'flex flex-col justify-between bg-slate-950 rounded-lg h-52 overflow-auto aspect-video'}>
         <div className="mx-auto">
           {title}
         </div>

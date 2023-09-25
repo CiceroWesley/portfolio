@@ -2,6 +2,7 @@ import Skill from "../Skill/Skill"
 import { skillsData, projectsData, skill, project } from "../../data/data";
 import { useState } from "react"
 import Project from "../Project/Project";
+import Experience from "../Experience/Experience";
 
 const Main = () => {
   const [skills] = useState<skill[]>(skillsData);
@@ -18,9 +19,12 @@ const Main = () => {
                 <span>Hello, my name is</span>
                 <span className="text-5xl text-sky-300 font-semibold">Cicero Wesley</span>
               </div>
-              <div>
+              <div className="flex flex-col">
                 <span className="text-xl font-medium">
                   I am a Computer Science &#127891; and a Full Stack Developer. I love making solutions and I am always searching to learn new technologies and improve on my skills &#9889;.
+                </span>
+                <span className="text-xl font-medium">
+                  Currently, I am studying GraphQL and TailwindCSS &#128187;.
                 </span>
               </div>
             </div>
@@ -31,7 +35,7 @@ const Main = () => {
         </article>
         <article>
           <div className="">
-            <header id="skills" className="flex flex-row justify-center font-semibold text-3xl my-3 bg-clip-text text-transparent bg-gradient-to-b from-yellow-300 to-amber-600">
+            <header id="skills" className="flex flex-row justify-center font-semibold text-3xl my-3 bg-clip-text text-transparent text-yellow-300">
               <h2 className="">MY SKILLS</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap mx-16 my-4">
@@ -45,7 +49,7 @@ const Main = () => {
         </article>
         <article>
           <div className="">
-            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent bg-gradient-to-b from-yellow-300 to-amber-600">
+            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent text-yellow-300">
               <h2>PROJECTS</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
@@ -58,8 +62,23 @@ const Main = () => {
           </div>
         </article>
         <article>
+          <div>
+            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent text-yellow-300">
+              <h2>EXPERIENCES</h2>
+            </header>
+            <ul className="flex flex-col items-center justify-center list-disc">
+              <li className="w-1/2"><Experience/></li>
+              <li className="w-1/2"><Experience/></li>
+              <li className="w-1/2"><Experience/></li>
+              <li className="">teste</li>
+              <li>teste</li>
+              <li>teste</li>
+            </ul>
+          </div>
+        </article>
+        <article>
           <div className="flex flex-col items-center my-10">
-            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-b from-yellow-300 to-amber-600">CONTACT-ME</header>
+            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-b text-yellow-300">CONTACT-ME</header>
             <div className="flex flex-row items-center space-x-2">
               <div>
                 <a href="mailto: wesleycariutaba@gmail.com">
