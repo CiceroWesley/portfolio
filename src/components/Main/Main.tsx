@@ -1,5 +1,5 @@
 import Skill from "../Skill/Skill"
-import { skillsData, projectsData, skill, project } from "../../data/data";
+import { skillsData, projectsData, experiencesData, skill, project, experience } from "../../data/data";
 import { useState } from "react"
 import Project from "../Project/Project";
 import Experience from "../Experience/Experience";
@@ -7,6 +7,7 @@ import Experience from "../Experience/Experience";
 const Main = () => {
   const [skills] = useState<skill[]>(skillsData);
   const [projects] = useState<project[]>(projectsData);
+  const [experiences] = useState<experience[]>(experiencesData);
 
 
   return (
@@ -21,7 +22,7 @@ const Main = () => {
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-medium">
-                  I am a Computer Science &#127891; and a Full Stack Developer. I love making solutions and I am always searching to learn new technologies and improve on my skills &#9889;.
+                  I am a Computer Scientist at the Federal University of Cariri &#127891; and a Full Stack Developer. I love making solutions and I am always searching to learn new technologies and improve on my skills &#9889;.
                 </span>
                 <span className="text-xl font-medium">
                   Currently, I am studying GraphQL and TailwindCSS &#128187;.
@@ -40,7 +41,7 @@ const Main = () => {
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap mx-16 my-4">
               {skills && skills.map((skill) => (
-                <div className="m-1">
+                <div className="m-1 transition ease-in-out delay-150 hover:scale-125 duration-300">
                   <Skill name={skill.name} src={skill.src} alt={skill.alt}/>
                 </div>
               ))}
@@ -67,12 +68,9 @@ const Main = () => {
               <h2>EXPERIENCES</h2>
             </header>
             <ul className="flex flex-col items-center justify-center list-disc">
-              <li className="w-1/2"><Experience/></li>
-              <li className="w-1/2"><Experience/></li>
-              <li className="w-1/2"><Experience/></li>
-              <li className="">teste</li>
-              <li>teste</li>
-              <li>teste</li>
+              {experiences && experiences.map((experience) => (
+                <li className="w-1/2"><Experience title={experience.title} company={experience.company} description={experience.description} time={experience.time}/></li>
+              ))}
             </ul>
           </div>
         </article>
