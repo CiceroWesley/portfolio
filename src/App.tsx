@@ -8,7 +8,7 @@ function App() {
 
 
   return (
-    <div className='bg-slate-800'>
+    <div className='font-sans bg-slate-800'>
       <Navbar/>
       <Main/>
       <Footer/>

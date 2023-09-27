@@ -1,10 +1,19 @@
+import { useState } from "react"
 
 const Navbar = () => {
+  const [angle, setAngle] = useState<number>(0);
+  const [angleValues] = useState<number[]>([0, 1, 2, 3, 6, 12, 45, 90, 180]);
+
+  const rotate = () : void => {
+    const randomNumber : number = Math.floor(Math.random() * angleValues.length);
+    setAngle(angleValues[randomNumber]);
+  };
+
   return (
     <nav>
       <div className='flex flex-row items-center justify-between mb-2 mx-3 text-white font-medium'>
-        <div className="text-sky-300">
-          <span>Cicero Wesley</span>
+        <div className={`text-sky-300 transition ease-in-out delay-150 duration-300 rotate-${angle}`}>
+          <a href="#"><span onMouseEnter={() => rotate()}>Cicero Wesley</span></a>
         </div>
         <div className='hidden sm:flex sm:flex-row sm:items-center sm:space-x-5'>
           <a href="#about">
