@@ -132,21 +132,21 @@ const projectsData : project[] = [
     alt: "SGRU meeting page"
   },
   {
-    title: "Found and Lost",
+    title: "FOUND AND LOST",
     urlRepository: "https://github.com/CiceroWesley/found-and-lost",
     urlProduction: "#",
     src: "../../../public/lostAndFound.png",
     alt: "Found and Lost home page"
   },
   {
-    title: "Mesor",
+    title: "MESOR",
     urlRepository: "#",
     urlProduction: "http://mesor.cloud/",
     src: "../../../public/mesor.png",
     alt: "Mesor home page"
   },
   {
-    title: "Pronele",
+    title: "PRONELE",
     urlRepository: "https://github.com/FelipeFelipeRenan/prontuario-medico",
     urlProduction: "#",
     src: "../../../public/pronele.png",

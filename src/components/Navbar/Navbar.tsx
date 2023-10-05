@@ -12,7 +12,7 @@ const Navbar = () => {
   return (
     <nav>
       <div className='flex flex-row items-center justify-between mb-2 mx-3 text-white font-medium'>
-        <div className={`text-sky-300 transition ease-in-out delay-150 duration-300 rotate-${angle}`}>
+        <div style={{rotate: `${angle}deg`, transitionTimingFunction: 'ease-in-out', transitionDelay: '0.15s', transitionDuration: '0.3s'}} className={`text-sky-300`}>
           <a href="#"><span onMouseEnter={() => rotate()}>Cicero Wesley</span></a>
         </div>
         <div className='hidden sm:flex sm:flex-row sm:items-center sm:space-x-5'>
