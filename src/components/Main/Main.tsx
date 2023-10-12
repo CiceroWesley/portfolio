@@ -30,7 +30,7 @@ const Main = () => {
               </div>
             </div>
             <div className="my-8 sm:rounded-full sm:w-1/2">
-              <img className="rounded-full h-80 sm:h-96 mx-auto hover:shadow-2xl  hover:shadow-yellow-300/50" src="../../../public/photo.jpg" alt="" />
+              <img className="rounded-full h-80 sm:h-96 mx-auto hover:shadow-2xl  hover:shadow-yellow-300/50" src="/photo.jpg" alt="" />
             </div>
           </div>
         </article>

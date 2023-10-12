@@ -22,102 +22,102 @@ export type experience = {
 const skillsData : skill[] = [
   {
     name: "React JS",
-    src: "../../../public/skills/react.svg",
+    src: "/skills/react.svg",
     alt: "React JS's logo"
   },
   {
     name: "React Native",
-    src: "../../../public/skills/reactnative.svg",
+    src: "/skills/reactnative.svg",
     alt: "React Native's logo"
   },
   {
     name: "Material UI",
-    src: "../../../public/skills/materialui.svg",
+    src: "/skills/materialui.svg",
     alt: "Material UI's logo"
   },
   // {
   //   name: "TailwindCSS",
-  //   src: "../../../public/skills/tailwindcss.svg",
+  //   src: "/skills/tailwindcss.svg",
   //   alt: "TailwindCSS's logo"
   // },
   {
     name: "Node JS",
-    src: "../../../public/skills/nodejs.svg",
+    src: "/skills/nodejs.svg",
     alt: "Node JS's logo"
   },
   {
     name: "Express JS",
-    src: "../../../public/skills/express.svg",
+    src: "/skills/express.svg",
     alt: "Express JS's logo"
   },
   {
     name: "JavaScript",
-    src: "../../../public/skills/javascript.svg",
+    src: "/skills/javascript.svg",
     alt: "JavaScript's logo"
   },
   {
     name: "TypeScript",
-    src: "../../../public/skills/typescript.svg",
+    src: "/skills/typescript.svg",
     alt: "TypeScript's logo"
   },
   {
     name: "HTML",
-    src: "../../../public/skills/html.svg",
+    src: "/skills/html.svg",
     alt: "HTML's logo"
   },
   {
     name: "CSS",
-    src: "../../../public/skills/css.svg",
+    src: "/skills/css.svg",
     alt: "CSS's logo"
   },
   {
     name: "C",
-    src: "../../../public/skills/c.svg",
+    src: "/skills/c.svg",
     alt: "C's logo"
   },
   {
     name: "Java",
-    src: "../../../public/skills/java.svg",
+    src: "/skills/java.svg",
     alt: "Java's logo"
   },
   {
     name: "PHP",
-    src: "../../../public/skills/php.svg",
+    src: "/skills/php.svg",
     alt: "PHP's logo"
   },
   {
     name: "Python",
-    src: "../../../public/skills/python.svg",
+    src: "/skills/python.svg",
     alt: "Python's logo"
   },
   {
     name: "MySQL",
-    src: "../../../public/skills/mysql.svg",
+    src: "/skills/mysql.svg",
     alt: "MySQL's logo"
   },
   {
     name: "MariaDB",
-    src: "../../../public/skills/mariadb.svg",
+    src: "/skills/mariadb.svg",
     alt: "MariaDB's logo"
   },
   {
     name: "MongoDB",
-    src: "../../../public/skills/mongodb.svg",
+    src: "/skills/mongodb.svg",
     alt: "MongoDB's logo"
   },
   {
     name: "Git",
-    src: "../../../public/skills/git.svg",
+    src: "/skills/git.svg",
     alt: "Git's logo"
   },
   {
     name: "Docker",
-    src: "../../../public/skills/docker.svg",
+    src: "/skills/docker.svg",
     alt: "Docker's logo"
   },
   {
     name: "Linux",
-    src: "../../../public/skills/linux.svg",
+    src: "/skills/linux.svg",
     alt: "Linux's logo"
   },
 
@@ -128,42 +128,42 @@ const projectsData : project[] = [
     title: "SGRU",
     urlRepository: "https://github.com/CiceroWesley/SGRU",
     urlProduction: "#",
-    src: "../../../public/projects/sgru.png",
+    src: "/projects/sgru.png",
     alt: "SGRU meeting page"
   },
   {
     title: "FOUND AND LOST",
     urlRepository: "https://github.com/CiceroWesley/found-and-lost",
     urlProduction: "#",
-    src: "../../../public/projects/lostAndFound.png",
+    src: "/projects/lostAndFound.png",
     alt: "Found and Lost home page"
   },
   {
     title: "MESOR",
     urlRepository: "#",
     urlProduction: "http://mesor.cloud/",
-    src: "../../../public/projects/mesor.png",
+    src: "/projects/mesor.png",
     alt: "Mesor home page"
   },
   {
     title: "PRONELE",
     urlRepository: "https://github.com/FelipeFelipeRenan/prontuario-medico",
     urlProduction: "#",
-    src: "../../../public/projects/pronele.png",
+    src: "/projects/pronele.png",
     alt: "Initial screen of Pronele"
   },
   {
     title: "KEYLOGGER",
     urlRepository: "https://github.com/CiceroWesley/Keylogger",
     urlProduction: "#",
-    src: "../../../public/projects/keylogger.jpeg",
+    src: "/projects/keylogger.jpeg",
     alt: "Ilustractive image of keylogger"
   },
   {
     title: "DESIGN PATTERNS",
     urlRepository: "https://github.com/CiceroWesley/analise-e-projeto-de-sistemas",
     urlProduction: "#",
-    src: "../../../public/projects/designpatterns.jpg",
+    src: "/projects/designpatterns.jpg",
     alt: "Ilustractive image of design patterns"
   },
 ];
