@@ -22,17 +22,17 @@ export type experience = {
 const skillsData : skill[] = [
   {
     name: "React JS",
-    src: "/skills/react.svg",
+    src: "/portfolio/skills/react.svg",
     alt: "React JS's logo"
   },
   {
     name: "React Native",
-    src: "/skills/reactnative.svg",
+    src: "/portfolio/skills/reactnative.svg",
     alt: "React Native's logo"
   },
   {
     name: "Material UI",
-    src: "/skills/materialui.svg",
+    src: "/portfolio/skills/materialui.svg",
     alt: "Material UI's logo"
   },
   // {
@@ -42,82 +42,82 @@ const skillsData : skill[] = [
   // },
   {
     name: "Node JS",
-    src: "/skills/nodejs.svg",
+    src: "/portfolio/skills/nodejs.svg",
     alt: "Node JS's logo"
   },
   {
     name: "Express JS",
-    src: "/skills/express.svg",
+    src: "/portfolio/skills/express.svg",
     alt: "Express JS's logo"
   },
   {
     name: "JavaScript",
-    src: "/skills/javascript.svg",
+    src: "/portfolio/skills/javascript.svg",
     alt: "JavaScript's logo"
   },
   {
     name: "TypeScript",
-    src: "/skills/typescript.svg",
+    src: "/portfolio/skills/typescript.svg",
     alt: "TypeScript's logo"
   },
   {
     name: "HTML",
-    src: "/skills/html.svg",
+    src: "/portfolio/skills/html.svg",
     alt: "HTML's logo"
   },
   {
     name: "CSS",
-    src: "/skills/css.svg",
+    src: "/portfolio/skills/css.svg",
     alt: "CSS's logo"
   },
   {
     name: "C",
-    src: "/skills/c.svg",
+    src: "/portfolio/skills/c.svg",
     alt: "C's logo"
   },
   {
     name: "Java",
-    src: "/skills/java.svg",
+    src: "/portfolio/skills/java.svg",
     alt: "Java's logo"
   },
   {
     name: "PHP",
-    src: "/skills/php.svg",
+    src: "/portfolio/skills/php.svg",
     alt: "PHP's logo"
   },
   {
     name: "Python",
-    src: "/skills/python.svg",
+    src: "/portfolio/skills/python.svg",
     alt: "Python's logo"
   },
   {
     name: "MySQL",
-    src: "/skills/mysql.svg",
+    src: "/portfolio/skills/mysql.svg",
     alt: "MySQL's logo"
   },
   {
     name: "MariaDB",
-    src: "/skills/mariadb.svg",
+    src: "/portfolio/skills/mariadb.svg",
     alt: "MariaDB's logo"
   },
   {
     name: "MongoDB",
-    src: "/skills/mongodb.svg",
+    src: "/portfolio/skills/mongodb.svg",
     alt: "MongoDB's logo"
   },
   {
     name: "Git",
-    src: "/skills/git.svg",
+    src: "/portfolio/skills/git.svg",
     alt: "Git's logo"
   },
   {
     name: "Docker",
-    src: "/skills/docker.svg",
+    src: "/portfolio/skills/docker.svg",
     alt: "Docker's logo"
   },
   {
     name: "Linux",
-    src: "/skills/linux.svg",
+    src: "/portfolio/skills/linux.svg",
     alt: "Linux's logo"
   },
 
@@ -128,42 +128,42 @@ const projectsData : project[] = [
     title: "SGRU",
     urlRepository: "https://github.com/CiceroWesley/SGRU",
     urlProduction: "#",
-    src: "/projects/sgru.png",
+    src: "/portfolio/projects/sgru.png",
     alt: "SGRU meeting page"
   },
   {
     title: "FOUND AND LOST",
     urlRepository: "https://github.com/CiceroWesley/found-and-lost",
     urlProduction: "#",
-    src: "/projects/lostAndFound.png",
+    src: "/portfolio/projects/lostAndFound.png",
     alt: "Found and Lost home page"
   },
   {
     title: "MESOR",
     urlRepository: "#",
     urlProduction: "http://mesor.cloud/",
-    src: "/projects/mesor.png",
+    src: "/portfolio/projects/mesor.png",
     alt: "Mesor home page"
   },
   {
     title: "PRONELE",
     urlRepository: "https://github.com/FelipeFelipeRenan/prontuario-medico",
     urlProduction: "#",
-    src: "/projects/pronele.png",
+    src: "/portfolio/projects/pronele.png",
     alt: "Initial screen of Pronele"
   },
   {
     title: "KEYLOGGER",
     urlRepository: "https://github.com/CiceroWesley/Keylogger",
     urlProduction: "#",
-    src: "/projects/keylogger.jpeg",
+    src: "/portfolio/projects/keylogger.jpeg",
     alt: "Ilustractive image of keylogger"
   },
   {
     title: "DESIGN PATTERNS",
     urlRepository: "https://github.com/CiceroWesley/analise-e-projeto-de-sistemas",
     urlProduction: "#",
-    src: "/projects/designpatterns.jpg",
+    src: "/portfolio/projects/designpatterns.jpg",
     alt: "Ilustractive image of design patterns"
   },
 ];
