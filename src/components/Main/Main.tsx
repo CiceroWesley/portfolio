@@ -42,7 +42,7 @@ const Main = () => {
             <div className="flex flex-row items-center justify-center flex-wrap mx-16 my-4">
               {skills && skills.map((skill) => (
                 <div className="m-1 transition ease-in-out delay-150 hover:scale-125 duration-300">
-                  <Skill name={skill.name} src={skill.src} alt={skill.alt}/>
+                  <Skill name={skill.name} src={skill.src} alt={skill.alt} link={skill.link}/>
                 </div>
               ))}
             </div>
@@ -55,7 +55,7 @@ const Main = () => {
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
               {projects && projects.map((project) => (
-                <div className="m-4">
+                <div className="m-4 transition ease-in-out delay-150 hover:scale-125 duration-300">
                   <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
                 </div>
               ))}
@@ -67,9 +67,11 @@ const Main = () => {
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent text-yellow-300">
               <h2>EXPERIENCES</h2>
             </header>
-            <ul className="flex flex-col items-center justify-center list-disc">
+            <ul className="flex flex-col items-center justify-center list-disc space-y-2">
               {experiences && experiences.map((experience) => (
-                <li className="w-1/2"><Experience title={experience.title} company={experience.company} description={experience.description} time={experience.time}/></li>
+                <li className="w-1/2">
+                  <Experience title={experience.title} company={experience.company} description={experience.description} time={experience.time}/>
+                </li>
               ))}
             </ul>
           </div>

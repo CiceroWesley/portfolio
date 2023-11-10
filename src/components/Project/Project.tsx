@@ -3,7 +3,7 @@ import productionIcon from '../../assets/productionIcon.svg';
 
 type Props = {
   title : string,
-  urlRepository : string,
+  urlRepository? : string,
   urlProduction? : string,
   src : string,
   alt : string
