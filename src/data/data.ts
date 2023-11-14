@@ -7,7 +7,7 @@ export type skill = {
 
 export type project = {
   title : string,
-  urlRepository : string,
+  urlRepository? : string,
   urlProduction? : string,
   src : string,
   alt : string
@@ -146,20 +146,17 @@ const projectsData : project[] = [
   {
     title: "SGRU",
     urlRepository: "https://github.com/CiceroWesley/SGRU",
-    urlProduction: "#",
     src: "/portfolio/projects/sgru.png",
     alt: "SGRU meeting page"
   },
   {
     title: "FOUND AND LOST",
     urlRepository: "https://github.com/CiceroWesley/found-and-lost",
-    urlProduction: "#",
     src: "/portfolio/projects/lostAndFound.png",
     alt: "Found and Lost home page"
   },
   {
     title: "MESOR",
-    urlRepository: "#",
     urlProduction: "http://mesor.cloud/",
     src: "/portfolio/projects/mesor.png",
     alt: "Mesor home page"
@@ -167,21 +164,18 @@ const projectsData : project[] = [
   {
     title: "PRONELE",
     urlRepository: "https://github.com/FelipeFelipeRenan/prontuario-medico",
-    urlProduction: "#",
     src: "/portfolio/projects/pronele.png",
     alt: "Initial screen of Pronele"
   },
   {
     title: "KEYLOGGER",
     urlRepository: "https://github.com/CiceroWesley/Keylogger",
-    urlProduction: "#",
     src: "/portfolio/projects/keylogger.jpeg",
     alt: "Ilustractive image of keylogger"
   },
   {
     title: "DESIGN PATTERNS",
     urlRepository: "https://github.com/CiceroWesley/analise-e-projeto-de-sistemas",
-    urlProduction: "#",
     src: "/portfolio/projects/designpatterns.jpg",
     alt: "Ilustractive image of design patterns"
   },
