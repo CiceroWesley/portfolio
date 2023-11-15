@@ -3,8 +3,10 @@ import { skillsData, projectsData, experiencesData, skill, project, experience }
 import { useState } from "react"
 import Project from "../Project/Project";
 import Experience from "../Experience/Experience";
+import { useTranslation } from "react-i18next";
 
 const Main = () => {
+  const {t} = useTranslation();
   const [skills] = useState<skill[]>(skillsData);
   const [projects] = useState<project[]>(projectsData);
   const [experiences] = useState<experience[]>(experiencesData);
@@ -17,15 +19,15 @@ const Main = () => {
           <div className="sm:flex mx-3 mb-10">
             <div className="sm:w-1/2">
               <div className="flex flex-col font-semibold text-2xl">
-                <span>Hello, my name is</span>
+                <span>{t('main.hello')}</span>
                 <span className="text-5xl text-sky-300 font-semibold">Cicero Wesley</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-medium">
-                  I am a Computer Scientist at the Federal University of Cariri &#127891; and a Full Stack Developer. I love making solutions and I am always searching to learn new technologies and improve on my skills &#9889;.
+                  {t('main.description')}
                 </span>
                 <span className="text-xl font-medium">
-                  Currently, I am studying GraphQL and TailwindCSS &#128187;.
+                  {t('main.study')}
                 </span>
               </div>
             </div>
@@ -37,7 +39,7 @@ const Main = () => {
         <article>
           <div className="">
             <header id="skills" className="flex flex-row justify-center font-semibold text-3xl my-3 bg-clip-text text-transparent text-yellow-300">
-              <h2 className="">MY SKILLS</h2>
+              <h2 className="">{t('main.myskills')}</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap mx-16 my-4">
               {skills && skills.map((skill) => (
@@ -51,7 +53,7 @@ const Main = () => {
         <article>
           <div className="">
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent text-yellow-300">
-              <h2>PROJECTS</h2>
+              <h2>{t('main.projects')}</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
               {projects && projects.map((project) => (
@@ -65,7 +67,7 @@ const Main = () => {
         <article>
           <div>
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent text-yellow-300">
-              <h2>EXPERIENCES</h2>
+              <h2>{t('main.experiences')}</h2>
             </header>
             <ul className="flex flex-col items-center justify-center list-disc space-y-2">
               {experiences && experiences.map((experience) => (
@@ -78,7 +80,7 @@ const Main = () => {
         </article>
         <article>
           <div className="flex flex-col items-center my-10">
-            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-b text-yellow-300">CONTACT-ME</header>
+            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-b text-yellow-300">{t('main.contactme')}</header>
             <div className="flex flex-row items-center space-x-2">
               <div>
                 <a href="mailto: wesleycariutaba@gmail.com">
