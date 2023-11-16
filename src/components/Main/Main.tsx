@@ -5,12 +5,19 @@ import Project from "../Project/Project";
 import Experience from "../Experience/Experience";
 import { useTranslation } from "react-i18next";
 
-const Main = () => {
+type Props = {
+  selectedLanguage: number
+}
+
+
+
+const Main = ({selectedLanguage}: Props) => {
   const {t} = useTranslation();
   const [skills] = useState<skill[]>(skillsData);
   const [projects] = useState<project[]>(projectsData);
   const [experiences] = useState<experience[]>(experiencesData);
-
+  // const language : {[key: string] : number}= {"en": 0, "pt": 1};
+  // const [selectedLanguage, setSelectedLanguage] = useState<number>(language[i18n.language])
 
   return (
     <main>
@@ -72,7 +79,7 @@ const Main = () => {
             <ul className="flex flex-col items-center justify-center list-disc space-y-2">
               {experiences && experiences.map((experience) => (
                 <li className="w-1/2">
-                  <Experience title={experience.title} company={experience.company} description={experience.description} time={experience.time}/>
+                  <Experience title={experience.title[selectedLanguage]} company={experience.company[selectedLanguage]} description={experience.description[selectedLanguage]} time={experience.time[selectedLanguage]}/>
                 </li>
               ))}
             </ul>

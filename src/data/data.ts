@@ -14,10 +14,10 @@ export type project = {
 };
 
 export type experience = {
-  title : string,
-  company : string,
-  description : string,
-  time : string
+  title? : string[] | string,
+  company? : string[] | string,
+  description? : string[] | string,
+  time? : string[] | string
 };
 
 const skillsData : skill[] = [
@@ -183,13 +183,13 @@ const projectsData : project[] = [
 
 const experiencesData : experience[] = [
   {
-    title : "Intern at DTI",
+    title : ["Intern at DTI", "Estágio na DTI"],
     company : "Federal University of Cariri",
     description : "I worked mainly on the study and beginning of the implementation of a single login system using Keycloak, so that the university's systems are unified in terms of login and the user base is the same, using synchronization with LDAP. In all DTI processes, specifically in the CSI (Information Systems Coordination), Scrum was adopted, helping in the management and development of projects.",
     time : "August 2022 - November 2022"
   },
   {
-    title : "Extension Project Collaborator at Comon (second time)",
+    title : ["Extension Project Collaborator at Comon (second time)", "Colaborador de projeto de Extensão no Comon (segunda vez)"],
     company : "Federal University of Cariri",
     description : "I mainly worked on managing the project's Facebook page, creating posts and communicating with potential partners of the initiative. Computação Online (ComOn) is a UFCA extension project, which produces audiovisual media aiming to promote the dissemination of content related to information technology and the sharing of university experiences in the Computer Science course.",
     time : "May 2021 - August 2021"

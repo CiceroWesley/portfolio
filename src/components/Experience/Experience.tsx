@@ -1,15 +1,9 @@
 import { useState } from "react"
 import plusIcon from '../../assets/plus.svg'
 import minusIcon from '../../assets/minus.svg'
+import {experience} from '../../data/data'
 
-type Props = {
-  title : string,
-  company : string,
-  description : string,
-  time : string
-}
-
-const Experience = ({title, company, description, time}: Props) => {
+const Experience = ({title, company, description, time}: experience) => {
   const [hidden, setHidden] = useState<boolean>(true);
 
   const changeHidden = () => {
