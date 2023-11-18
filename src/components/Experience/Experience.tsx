@@ -16,7 +16,7 @@ const Experience = ({title, company, description, time}: experience) => {
         <h3 className='text-lg'>{title}</h3>
         <img className="h-5 border rounded-lg hover:cursor-pointer" src={hidden ? plusIcon : minusIcon} onClick={() => changeHidden()}/>
       </div>
-      <div className={hidden ? 'hidden' : 'transition ease-in-out'}>
+      <div className={hidden ? 'hidden' : 'flex flex-col'}>
         <h4 className='text-base'>{company}</h4>
         <span className='text-justify'>{description}</span>
         <span className='text-sm'>{time}</span>

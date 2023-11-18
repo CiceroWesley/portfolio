@@ -1,5 +1,7 @@
-import { Dispatch, SetStateAction, useState } from "react"
+import { Dispatch, SetStateAction, useState } from "react";
 import { useTranslation, } from "react-i18next";
+import brazilFlag from '../../assets/brazil.png';
+import usaFlag from '../../assets/usa.png';
 
 type Props = {
   language: {[key: string] : number},
@@ -16,37 +18,36 @@ const Navbar = ({language, setSelectedLanguage} : Props) => {
     setAngle(angleValues[randomNumber]);
   };
 
+  const changeLanguage = (lang : string) => {
+    i18n.changeLanguage(lang);
+    setSelectedLanguage(language[lang]);
+  }
+
   return (
-    <nav>
-      <div className='flex flex-row items-center justify-between mb-2 mx-3 text-white font-medium'>
-        <button onClick={
-          () => {
-            i18n.changeLanguage('en');
-            setSelectedLanguage(language['en']);
-          }
-      }>Ingles</button>
-        <button onClick={
-          () => {
-            i18n.changeLanguage('pt');
-            setSelectedLanguage(language['pt']);
-          }
-      }>Português</button>
-        <div style={{rotate: `${angle}deg`, transitionTimingFunction: 'ease-in-out', transitionDelay: '0.15s', transitionDuration: '0.3s'}} className={`text-sky-300`}>
-          <a href="#"><span onMouseEnter={() => rotate()}>Cicero Wesley</span></a>
+    <nav className="pt-4 px-10">
+      <div className="flex flex-col text-white font-medium">
+        <div className='flex flex-row items-center justify-between'>
+          <div style={{rotate: `${angle}deg`, transitionTimingFunction: 'ease-in-out', transitionDelay: '0.15s', transitionDuration: '0.3s'}} className={`text-sky-300`}>
+            <a href="#"><span onMouseEnter={() => rotate()}>Cicero Wesley</span></a>
+          </div>
+          <div className='hidden sm:flex sm:flex-row sm:items-center sm:space-x-5'>
+            <a href="#about">
+              <div>{t('navbar.about')}</div>
+            </a>
+            <a href="#skills">
+              <div>{t('navbar.skills')}</div>
+            </a>
+            <a href="#projects">
+              <div>{t('navbar.projects')}</div>
+            </a>
+            <a href="#contactme">
+              <div>{t('navbar.contactme')}</div>
+            </a>
+          </div>
         </div>
-        <div className='hidden sm:flex sm:flex-row sm:items-center sm:space-x-5'>
-          <a href="#about">
-            <div>{t('navbar.about')}</div>
-          </a>
-          <a href="#skills">
-            <div>{t('navbar.skills')}</div>
-          </a>
-          <a href="#projects">
-            <div>{t('navbar.projects')}</div>
-          </a>
-          <a href="#contactme">
-            <div>{t('navbar.contactme')}</div>
-          </a>
+        <div className="fixed right-6 top-14 space-y-2">
+          <img className="h-7 hover:cursor-pointer" src={usaFlag} onClick={() => changeLanguage('en')}/>
+          <img className="h-7 hover:cursor-pointer" src={brazilFlag} onClick={() => changeLanguage('pt')}/>
         </div>
       </div>
     </nav>

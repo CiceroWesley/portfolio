@@ -20,8 +20,8 @@ const i18nConfig = {
         },
         main: {
           hello: 'Hello, my name is',
-          description: 'I am a Computer Scientist at the Federal University of Cariri &#127891; and a Full Stack Developer. I love making solutions and I am always searching to learn new technologies and improve on my skills &#9889;.',
-          study: 'Currently, I am studying GraphQL and Tailwind CSS &#128187;.',
+          description: 'I am a Computer Scientist at the Federal University of Cariri and a Full Stack Developer. I love making solutions and I am always searching to learn new technologies and improve on my skills.',
+          study: 'Currently, I am studying GraphQL and Tailwind CSS.',
           myskills: 'MY SKILLS',
           projects: 'PROJECTS',
           experiences: 'EXPERIENCES',
@@ -39,8 +39,8 @@ const i18nConfig = {
         },
         main: {
           hello: 'Olá, meu nome é',
-          description: 'Eu sou um Cientista da Computação pela Universidade Federal do Cariri &#127891; e um Desenvolvedor Full Stack. Eu adoro criar soluções e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades &#9889;.',
-          study: "Atualmente, estou estudando GraphQL e Tailwind CSS &#128187;.",
+          description: 'Eu sou um Cientista da Computação pela Universidade Federal do Cariri e um Desenvolvedor Full Stack. Eu adoro criar soluções e estou sempre buscando aprender novas tecnologias e aprimorar minhas habilidades.',
+          study: "Atualmente, estou estudando GraphQL e Tailwind CSS.",
           myskills: 'MINHAS HABILIDADES',
           projects: 'PROJETOS',
           experiences: 'EXPERIÊNCIAS',

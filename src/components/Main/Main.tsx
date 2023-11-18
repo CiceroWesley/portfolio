@@ -16,14 +16,12 @@ const Main = ({selectedLanguage}: Props) => {
   const [skills] = useState<skill[]>(skillsData);
   const [projects] = useState<project[]>(projectsData);
   const [experiences] = useState<experience[]>(experiencesData);
-  // const language : {[key: string] : number}= {"en": 0, "pt": 1};
-  // const [selectedLanguage, setSelectedLanguage] = useState<number>(language[i18n.language])
 
   return (
     <main>
-      <div className="min-h-screen text-white mt-10">
+      <div className="min-h-screen text-white pt-6 px-6 space-y-12">
         <article id="about">
-          <div className="sm:flex mx-3 mb-10">
+          <div className="sm:flex">
             <div className="sm:w-1/2">
               <div className="flex flex-col font-semibold text-2xl">
                 <span>{t('main.hello')}</span>
@@ -38,19 +36,19 @@ const Main = ({selectedLanguage}: Props) => {
                 </span>
               </div>
             </div>
-            <div className="my-8 sm:rounded-full sm:w-1/2">
+            <div className="sm:rounded-full sm:w-1/2">
               <img className="rounded-full h-80 sm:h-96 mx-auto hover:shadow-2xl  hover:shadow-yellow-300/50" src="/portfolio/photo.jpg" alt="" />
             </div>
           </div>
         </article>
         <article>
-          <div className="">
-            <header id="skills" className="flex flex-row justify-center font-semibold text-3xl my-3 bg-clip-text text-transparent text-yellow-300">
+          <div>
+            <header id="skills" className="flex flex-row justify-center font-semibold text-3xl bg-clip-text text-transparent text-yellow-300">
               <h2 className="">{t('main.myskills')}</h2>
             </header>
-            <div className="flex flex-row items-center justify-center flex-wrap mx-16 my-4">
+            <div className="flex flex-row items-center justify-center flex-wrap my-4">
               {skills && skills.map((skill) => (
-                <div className="m-1 transition ease-in-out delay-150 hover:scale-125 duration-300">
+                <div className="p-2 transition ease-in-out delay-150 hover:scale-125 duration-300">
                   <Skill name={skill.name} src={skill.src} alt={skill.alt} link={skill.link}/>
                 </div>
               ))}
@@ -64,7 +62,7 @@ const Main = ({selectedLanguage}: Props) => {
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
               {projects && projects.map((project) => (
-                <div className="m-4 transition ease-in-out delay-150 hover:scale-125 duration-300">
+                <div className="p-5 transition ease-in-out delay-150 hover:scale-125 duration-300">
                   <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
                 </div>
               ))}
@@ -86,7 +84,7 @@ const Main = ({selectedLanguage}: Props) => {
           </div>
         </article>
         <article>
-          <div className="flex flex-col items-center my-10">
+          <div className="flex flex-col items-center p-5">
             <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-b text-yellow-300">{t('main.contactme')}</header>
             <div className="flex flex-row items-center space-x-2">
               <div>
@@ -95,7 +93,7 @@ const Main = ({selectedLanguage}: Props) => {
                 </a>
               </div>
               <div>
-                <a href="https://github.com/CiceroWesley/">
+                <a href="https://www.linkedin.com/in/cicero-wesley/">
                   <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin badge"/>
                 </a>
               </div>
