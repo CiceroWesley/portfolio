@@ -12,6 +12,7 @@ const Navbar = ({language, setSelectedLanguage} : Props) => {
   const {t, i18n} = useTranslation();
   const [angle, setAngle] = useState<number>(0);
   const [angleValues] = useState<number[]>([0, 1, 2, 3, 6, 12, 45, 90, 180]);
+  const defaultClasses = "px-2 rounded-lg transition ease-in-out delay-125 duration-300 hover:bg-secondary-color";
 
   const rotate = () : void => {
     const randomNumber : number = Math.floor(Math.random() * angleValues.length);
@@ -24,23 +25,23 @@ const Navbar = ({language, setSelectedLanguage} : Props) => {
   }
 
   return (
-    <nav className="pt-4 px-10">
-      <div className="flex flex-col text-white font-medium">
+    <nav className="py-3 px-6 bg-background-color">
+      <div className="flex flex-col text-text-color font-medium">
         <div className='flex flex-row items-center justify-between'>
-          <div style={{rotate: `${angle}deg`, transitionTimingFunction: 'ease-in-out', transitionDelay: '0.15s', transitionDuration: '0.3s'}} className={`text-sky-300`}>
+          <div style={{rotate: `${angle}deg`, transitionTimingFunction: 'ease-in-out', transitionDelay: '0.15s', transitionDuration: '0.3s'}} className={`text-text-color font-semibold`}>
             <a href="#"><span onMouseEnter={() => rotate()}>Cicero Wesley</span></a>
           </div>
           <div className='hidden sm:flex sm:flex-row sm:items-center sm:space-x-5'>
-            <a href="#about">
+            <a href="#about" className={defaultClasses}>
               <div>{t('navbar.about')}</div>
             </a>
-            <a href="#skills">
+            <a href="#skills" className={defaultClasses}>
               <div>{t('navbar.skills')}</div>
             </a>
-            <a href="#projects">
+            <a href="#projects" className={defaultClasses}>
               <div>{t('navbar.projects')}</div>
             </a>
-            <a href="#contactme">
+            <a href="#contactme" className={defaultClasses}>
               <div>{t('navbar.contactme')}</div>
             </a>
           </div>

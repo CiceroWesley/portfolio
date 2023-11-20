@@ -11,9 +11,9 @@ type Props = {
 const Project = ({title, urlRepository, urlProduction, src, alt}: Props) => {
   return (
     <div>
-      <div className={'flex flex-col justify-between bg-slate-950 rounded-lg h-52 overflow-auto aspect-video'}>
+      <div className={'flex flex-col justify-between bg-accent-color rounded-lg h-52 overflow-auto aspect-video'}>
         <a href={urlProduction ? urlProduction : urlRepository} target="_blank" className='flex flex-col'>
-          <div className="mx-auto">
+          <div className="mx-auto text-secondary-color font-semibold">
           {title}
           </div>
           <img className="h-36" src={src} alt={alt} />

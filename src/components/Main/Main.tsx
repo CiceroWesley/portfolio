@@ -19,13 +19,13 @@ const Main = ({selectedLanguage}: Props) => {
 
   return (
     <main>
-      <div className="min-h-screen text-white pt-6 px-6 space-y-12">
+      <div className="min-h-screen text-text-color pt-8 px-6 space-y-12">
         <article id="about">
           <div className="sm:flex">
             <div className="sm:w-1/2">
               <div className="flex flex-col font-semibold text-2xl">
                 <span>{t('main.hello')}</span>
-                <span className="text-5xl text-sky-300 font-semibold">Cicero Wesley</span>
+                <span className="text-5xl text-primary-color font-semibold">Cicero Wesley</span>
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-medium">
@@ -37,13 +37,13 @@ const Main = ({selectedLanguage}: Props) => {
               </div>
             </div>
             <div className="sm:rounded-full sm:w-1/2">
-              <img className="rounded-full h-80 sm:h-96 mx-auto hover:shadow-2xl  hover:shadow-yellow-300/50" src="/portfolio/photo.jpg" alt="" />
+              <img className="rounded-full h-80 sm:h-96 mx-auto hover:shadow-2xl  hover:shadow-accent-color" src="/portfolio/photo.jpg" alt="" />
             </div>
           </div>
         </article>
         <article>
           <div>
-            <header id="skills" className="flex flex-row justify-center font-semibold text-3xl bg-clip-text text-transparent text-yellow-300">
+            <header id="skills" className="flex flex-row justify-center font-semibold text-3xl bg-clip-text text-primary-color">
               <h2 className="">{t('main.myskills')}</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap my-4">
@@ -57,7 +57,7 @@ const Main = ({selectedLanguage}: Props) => {
         </article>
         <article>
           <div className="">
-            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent text-yellow-300">
+            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
               <h2>{t('main.projects')}</h2>
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
@@ -71,7 +71,7 @@ const Main = ({selectedLanguage}: Props) => {
         </article>
         <article>
           <div>
-            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-transparent text-yellow-300">
+            <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
               <h2>{t('main.experiences')}</h2>
             </header>
             <ul className="flex flex-col items-center justify-center list-disc space-y-2">
@@ -85,7 +85,7 @@ const Main = ({selectedLanguage}: Props) => {
         </article>
         <article>
           <div className="flex flex-col items-center p-5">
-            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text text-transparent bg-gradient-to-b text-yellow-300">{t('main.contactme')}</header>
+            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text bg-gradient-to-b text-primary-color">{t('main.contactme')}</header>
             <div className="flex flex-row items-center space-x-2">
               <div>
                 <a href="mailto: wesleycariutaba@gmail.com">

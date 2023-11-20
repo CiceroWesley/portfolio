@@ -13,7 +13,7 @@ function App() {
 
 
   return (
-    <div className='font-sans bg-slate-800'>
+    <div className='font-sans bg-background-color'>
       <Navbar language={language} setSelectedLanguage={setSelectedLanguage}/>
       <Main selectedLanguage={selectedLanguage}/>
       <Footer/>
