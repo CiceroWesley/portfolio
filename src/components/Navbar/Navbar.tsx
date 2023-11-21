@@ -46,7 +46,7 @@ const Navbar = ({language, setSelectedLanguage} : Props) => {
             </a>
           </div>
         </div>
-        <div className="fixed right-6 top-14 space-y-2">
+        <div className="fixed right-6 top-14 space-y-2 z-10">
           <img className="h-7 hover:cursor-pointer" src={usaFlag} onClick={() => changeLanguage('en')}/>
           <img className="h-7 hover:cursor-pointer" src={brazilFlag} onClick={() => changeLanguage('pt')}/>
         </div>

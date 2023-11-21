@@ -1,6 +1,7 @@
 import Skill from "../Skill/Skill"
 import { skillsData, projectsData, experiencesData, skill, project, experience } from "../../data/data";
 import { useState } from "react"
+import { Fade } from "react-awesome-reveal";
 import Project from "../Project/Project";
 import Experience from "../Experience/Experience";
 import { useTranslation } from "react-i18next";
@@ -25,7 +26,9 @@ const Main = ({selectedLanguage}: Props) => {
             <div className="sm:w-1/2">
               <div className="flex flex-col font-semibold text-2xl">
                 <span>{t('main.hello')}</span>
-                <span className="text-5xl text-primary-color font-semibold">Cicero Wesley</span>
+                <Fade>
+                  <span className="text-5xl text-primary-color font-semibold">Cicero Wesley</span>
+                </Fade>
               </div>
               <div className="flex flex-col">
                 <span className="text-xl font-medium">
@@ -41,6 +44,7 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
+        <div className="border-2 border-secondary-color"></div>
         <article>
           <div>
             <header id="skills" className="flex flex-row justify-center font-semibold text-3xl bg-clip-text text-primary-color">
@@ -49,12 +53,15 @@ const Main = ({selectedLanguage}: Props) => {
             <div className="flex flex-row items-center justify-center flex-wrap my-4">
               {skills && skills.map((skill) => (
                 <div className="p-2 transition ease-in-out delay-150 hover:scale-125 duration-300">
-                  <Skill name={skill.name} src={skill.src} alt={skill.alt} link={skill.link}/>
+                  <Fade>
+                    <Skill name={skill.name} src={skill.src} alt={skill.alt} link={skill.link}/>
+                  </Fade>
                 </div>
               ))}
             </div>
           </div>
         </article>
+        <div className="border-2 border-secondary-color"></div>
         <article>
           <div className="">
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -63,12 +70,15 @@ const Main = ({selectedLanguage}: Props) => {
             <div className="flex flex-row items-center justify-center flex-wrap">
               {projects && projects.map((project) => (
                 <div className="p-5 transition ease-in-out delay-150 hover:scale-125 duration-300">
-                  <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
+                  <Fade>
+                    <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
+                  </Fade>
                 </div>
               ))}
             </div>
           </div>
         </article>
+        <div className="border-2 border-secondary-color"></div>
         <article>
           <div>
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -76,34 +86,39 @@ const Main = ({selectedLanguage}: Props) => {
             </header>
             <ul className="flex flex-col items-center justify-center list-disc space-y-2">
               {experiences && experiences.map((experience) => (
-                <li className="w-1/2">
-                  <Experience title={experience.title[selectedLanguage]} company={experience.company[selectedLanguage]} description={experience.description[selectedLanguage]} time={experience.time[selectedLanguage]}/>
-                </li>
+                <Fade>
+                  <li className="w-1/2">
+                    <Experience title={experience.title[selectedLanguage]} company={experience.company[selectedLanguage]} description={experience.description[selectedLanguage]} time={experience.time[selectedLanguage]}/>
+                  </li>
+                </Fade>
               ))}
             </ul>
           </div>
         </article>
+        <div className="border-2 border-secondary-color"></div>
         <article>
-          <div className="flex flex-col items-center p-5">
-            <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text bg-gradient-to-b text-primary-color">{t('main.contactme')}</header>
-            <div className="flex flex-row items-center space-x-2">
-              <div>
-                <a href="mailto: wesleycariutaba@gmail.com">
-                  <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail badge"/>
-                </a>
-              </div>
-              <div>
-                <a href="https://www.linkedin.com/in/cicero-wesley/">
-                  <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin badge"/>
-                </a>
-              </div>
-              <div>
-                <a href="https://github.com/CiceroWesley/">
-                  <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github badge"/>
-                </a>
+          <Fade>
+            <div className="flex flex-col items-center p-5">
+              <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text bg-gradient-to-b text-primary-color">{t('main.contactme')}</header>
+              <div className="flex flex-row items-center space-x-2">
+                <div>
+                  <a href="mailto: wesleycariutaba@gmail.com">
+                    <img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail badge"/>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://www.linkedin.com/in/cicero-wesley/">
+                    <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="Linkedin badge"/>
+                  </a>
+                </div>
+                <div>
+                  <a href="https://github.com/CiceroWesley/">
+                    <img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="Github badge"/>
+                  </a>
+                </div>
               </div>
             </div>
-          </div>
+          </Fade>
         </article>
       </div>
     </main>
