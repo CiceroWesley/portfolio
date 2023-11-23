@@ -5,6 +5,7 @@ import { Fade } from "react-awesome-reveal";
 import Project from "../Project/Project";
 import Experience from "../Experience/Experience";
 import { useTranslation } from "react-i18next";
+import Divider from "../Divider/Divider";
 
 type Props = {
   selectedLanguage: number
@@ -44,7 +45,7 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <div className="border-2 border-secondary-color"></div>
+        <Divider/>
         <article>
           <div>
             <header id="skills" className="flex flex-row justify-center font-semibold text-3xl bg-clip-text text-primary-color">
@@ -61,7 +62,7 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <div className="border-2 border-secondary-color"></div>
+        <Divider/>
         <article>
           <div className="">
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -78,7 +79,7 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <div className="border-2 border-secondary-color"></div>
+        <Divider/>
         <article>
           <div>
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -95,10 +96,10 @@ const Main = ({selectedLanguage}: Props) => {
             </ul>
           </div>
         </article>
-        <div className="border-2 border-secondary-color"></div>
+        <Divider/>
         <article>
           <Fade>
-            <div className="flex flex-col items-center p-5">
+            <div className="flex flex-col items-center">
               <header id="contactme" className="font-semibold text-2xl mb-4 bg-clip-text bg-gradient-to-b text-primary-color">{t('main.contactme')}</header>
               <div className="flex flex-row items-center space-x-2">
                 <div>
