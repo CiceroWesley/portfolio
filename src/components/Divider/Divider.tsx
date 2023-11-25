@@ -1,7 +1,11 @@
+type Props = {
+ borderSize : string
+}
 
-const Divider = () => {
+
+const Divider = ({borderSize} : Props) => {
   return (
-    <div className="border-2 border-secondary-color rounded-md"></div>
+    <div className={`border-${borderSize} border-secondary-color rounded-md`}></div>
   )
 }
 

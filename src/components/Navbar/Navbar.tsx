@@ -12,7 +12,7 @@ const Navbar = ({language, setSelectedLanguage} : Props) => {
   const {t, i18n} = useTranslation();
   const [angle, setAngle] = useState<number>(0);
   const [angleValues] = useState<number[]>([0, 1, 2, 3, 6, 12, 45, 90, 180]);
-  const defaultClasses = "px-2 rounded-lg transition ease-in-out delay-125 duration-300 hover:bg-secondary-color";
+  const defaultClasses = "px-2 border-b-2 border-gray-300 transition ease-in-out delay-125 duration-300 hover:border-secondary-color hover:border-b-2";
 
   const rotate = () : void => {
     const randomNumber : number = Math.floor(Math.random() * angleValues.length);

@@ -45,7 +45,7 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <Divider/>
+        <Divider borderSize="2"/>
         <article>
           <div>
             <header id="skills" className="flex flex-row justify-center font-semibold text-3xl bg-clip-text text-primary-color">
@@ -53,7 +53,7 @@ const Main = ({selectedLanguage}: Props) => {
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap my-4">
               {skills && skills.map((skill) => (
-                <div className="p-2 transition ease-in-out delay-150 hover:scale-125 duration-300">
+                <div className="p-3 transition ease-in-out delay-150 hover:scale-125 duration-300">
                   <Fade>
                     <Skill name={skill.name} src={skill.src} alt={skill.alt} link={skill.link}/>
                   </Fade>
@@ -62,7 +62,7 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <Divider/>
+        <Divider borderSize="2"/>
         <article>
           <div className="">
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -70,7 +70,7 @@ const Main = ({selectedLanguage}: Props) => {
             </header>
             <div className="flex flex-row items-center justify-center flex-wrap">
               {projects && projects.map((project) => (
-                <div className="p-5 transition ease-in-out delay-150 hover:scale-125 duration-300">
+                <div className="p-5">
                   <Fade>
                     <Project title={project.title} urlRepository={project.urlRepository} urlProduction={project.urlProduction} src={project.src} alt={project.alt}/>
                   </Fade>
@@ -79,7 +79,7 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <Divider/>
+        <Divider borderSize="2"/>
         <article>
           <div>
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -96,7 +96,7 @@ const Main = ({selectedLanguage}: Props) => {
             </ul>
           </div>
         </article>
-        <Divider/>
+        <Divider borderSize="2"/>
         <article>
           <Fade>
             <div className="flex flex-col items-center">
