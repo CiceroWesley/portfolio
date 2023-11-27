@@ -5,7 +5,6 @@ import { Fade } from "react-awesome-reveal";
 import Project from "../Project/Project";
 import Experience from "../Experience/Experience";
 import { useTranslation } from "react-i18next";
-import Divider from "../Divider/Divider";
 
 type Props = {
   selectedLanguage: number
@@ -45,7 +44,6 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <Divider borderSize="2"/>
         <article>
           <div>
             <header id="skills" className="flex flex-row justify-center font-semibold text-3xl bg-clip-text text-primary-color">
@@ -62,7 +60,6 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <Divider borderSize="2"/>
         <article>
           <div className="">
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -79,7 +76,6 @@ const Main = ({selectedLanguage}: Props) => {
             </div>
           </div>
         </article>
-        <Divider borderSize="2"/>
         <article>
           <div>
             <header id="projects" className="flex flex-row justify-center font-semibold text-2xl bg-clip-text text-primary-color">
@@ -96,7 +92,6 @@ const Main = ({selectedLanguage}: Props) => {
             </ul>
           </div>
         </article>
-        <Divider borderSize="2"/>
         <article>
           <Fade>
             <div className="flex flex-col items-center">

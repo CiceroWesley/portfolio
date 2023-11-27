@@ -28,8 +28,10 @@ const Navbar = ({language, setSelectedLanguage} : Props) => {
     <nav className="py-3 px-6 bg-background-color">
       <div className="flex flex-col text-text-color font-medium">
         <div className='flex flex-row items-center justify-between'>
-          <div style={{rotate: `${angle}deg`, transitionTimingFunction: 'ease-in-out', transitionDelay: '0.15s', transitionDuration: '0.3s'}} className={`text-text-color font-semibold`}>
-            <a href="#"><span onMouseEnter={() => rotate()}>Cicero Wesley</span></a>
+          <div style={{rotate: `${angle}deg`, transitionTimingFunction: 'ease-in-out', transitionDelay: '0.15s', transitionDuration: '0.3s'}} className={`text-primary-color font-semibold text-2xl italic`}>
+            <a href="#">
+              <span onMouseEnter={() => rotate()}>CWSF</span>
+            </a>
           </div>
           <div className='hidden sm:flex sm:flex-row sm:items-center sm:space-x-5'>
             <a href="#about" className={defaultClasses}>
