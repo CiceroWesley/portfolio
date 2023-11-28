@@ -116,12 +116,12 @@ const skillsData : skill[] = [
     alt: "MariaDB's logo",
     link : "https://mariadb.org/"
   },
-  {
-    name: "MongoDB",
-    src: "/portfolio/skills/mongodb.svg",
-    alt: "MongoDB's logo",
-    link : "https://www.mongodb.com/pt-br"
-  },
+  // {
+  //   name: "MongoDB",
+  //   src: "/portfolio/skills/mongodb.svg",
+  //   alt: "MongoDB's logo",
+  //   link : "https://www.mongodb.com/pt-br"
+  // },
   {
     name: "Git",
     src: "/portfolio/skills/git.svg",
@@ -168,10 +168,11 @@ const projectsData : project[] = [
     alt: "Initial screen of Pronele"
   },
   {
-    title: "KEYLOGGER",
-    urlRepository: "https://github.com/CiceroWesley/Keylogger",
-    src: "/portfolio/projects/keylogger.jpeg",
-    alt: "Ilustractive image of keylogger"
+    title: "NEWS TRACKING",
+    urlRepository: "https://github.com/CiceroWesley/news-tracking",
+    urlProduction: "https://news-tracking.onrender.com/",
+    src: "/portfolio/projects/newsTracking.png",
+    alt: "Image of News Tracking"
   },
 ];
 
