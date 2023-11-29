@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 
 function App() {
   const {i18n} = useTranslation();
-  const language : {[key: string] : number}= {"en": 0, "pt": 1};
+  const language : {[key: string] : number}= {"en-US": 0, "pt-BR": 1};
   const [selectedLanguage, setSelectedLanguage] = useState<number>(language[i18n.language])
 
 
